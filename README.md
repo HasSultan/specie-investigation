@@ -9,4 +9,4 @@ In this project, the species richness, categorized by unique BIN ID, by country 
 
 ![picture of parrots](parrotfig.jpeg)
 
-![map plot](map_plot.png)
+![map plot](map_plot2.png)

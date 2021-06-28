@@ -27,10 +27,13 @@ country_dis <- dfpsitt %>%
   filter(!is.na(country)) %>%
   count(country, sort = TRUE) 
 
+# creating map plot using rworldmap package
 joinData <- joinCountryData2Map(country_dis,
                                 joinCode = "NAME",
                                 nameJoinColumn = "country")
-theMap <- mapCountryData( joinData, nameColumnToPlot="n", addLegend=TRUE, mapTitle = "Psittaciformes Data Collection by Country", oceanCol = 'lightblue', missingCountryCol = "darkgrey")
+colourPalette <- RColorBrewer::brewer.pal(5,'RdPu')
+
+theMap <- mapCountryData( joinData, nameColumnToPlot="n", addLegend=TRUE, mapTitle = "Psittaciformes Data Collection by Country", oceanCol = 'lightblue', missingCountryCol = "darkgrey", borderCol = "black", colourPalette = colourPalette)
 
 #Here is a visualization of count of barcode data by country
 ggplot(data = country_dis, aes(reorder(x = country, n), y = n, fill = country)) +
