@@ -16,6 +16,9 @@ dfpsitt <- read_tsv(file = "http://www.boldsystems.org/index.php/API_Public/comb
 #Write data to disk
 write_tsv(dfpsitt, "Psittaciformes_BOLD_data.tsv")
 
+#read file
+dfpsitt <- read.delim(file='Psittaciformes_BOLD_data.tsv')
+
 ##### - Check basic attributes of dataframe----
 #Checking basic attributes of data
 names(dfpsitt)
@@ -40,7 +43,7 @@ ggplot(data = country_dis, aes(reorder(x = country, n), y = n, fill = country)) 
   geom_bar(stat = "identity") +
   theme(legend.position = "none") +
   coord_flip() +
-  ggtitle("Psittaciformes Distribution by Country") +
+  ggtitle("Data Distribution by Country") +
   xlab("Country") +
   ylab("Count of Barcode Data") 
 

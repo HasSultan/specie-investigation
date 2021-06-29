@@ -6,7 +6,4 @@ Their bright colours and intelligence have captivated humans for centuries, espe
 
 In this project, the species richness, categorized by unique BIN ID, by country is explored. Despite parrots' dominant prevalence in Australia, South America and Central America, their ability to establish breeding populations in the USA is fascinating. Furthermore, exploring species richness of parrots in countries they are not native to can be important in monitoring how species diversity changes over time as a result of human interference.
 
-
-![picture of parrots](parrotfig.jpeg)
-
 ![map plot](map_plot2.png)
